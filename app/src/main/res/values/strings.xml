@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">ProductDetailsrInformation</string>
     <string name="input_the_product_id">Input the product ID...</string>
+    <string name="submit">Submit</string>
+    <string name="essence">Essence</string>
+    <string name="essence_mascara_lash_princess">Essence Mascara\n Lash Princess</string>
+    <string name="_4_94_3_reviews">4.94(3 reviews)</string>
+    <string name="_9_99">$9.99</string>
+    <string name="_10_76"><s>$10.76</s></string>
+
+
 </resources>
