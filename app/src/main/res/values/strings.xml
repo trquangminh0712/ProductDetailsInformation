@@ -7,6 +7,24 @@
     <string name="_4_94_3_reviews">4.94(3 reviews)</string>
     <string name="_9_99">$9.99</string>
     <string name="_10_76"><s>$10.76</s></string>
+    <string name="_7_17_off">7.17% OFF</string>
+    <string name="product_details">Product Details</string>
+    <string name="product_description">The Essence Mascara Lash Princess is\n
+a popular mascara known for its\n
+volumizing and lengthening effects.\n
+Achieve dramatic lashes with this long-\n
+lasting and cruelty-free formula.</string>
+    <string name="low_in_stock_5_remains">"low in stock (5 products remains)"</string>
+    <string name="sku">SKU</string>
+    <string name="RCH45Q1A">RCH45Q1A</string>
+    <string name="twograms">2g</string>
+    <string name="weight">Weight</string>
+    <string name="policy">Policy</string>
+    <string name="deliver">Deliver</string>
+    <string name="ships_in_1_month">Ships in 1 month</string>
+    <string name="warranty">Warranty</string>
+    <string name="_1_month">1 month</string>
+    <string name="return_and_exchange">return_and_exchange</string>
 
 
 </resources>

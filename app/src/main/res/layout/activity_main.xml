@@ -39,9 +39,10 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
             android:src="@drawable/thumbnail1"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="110dp" />
+            tools:layout_editor_absoluteX="0dp" />
 
         <ImageView
             android:id="@+id/background1"
@@ -115,6 +116,217 @@
             app:layout_constraintStart_toEndOf="@id/reviewstars"
             android:layout_marginTop="5dp"
             android:textSize="16sp"
+            android:textColor="#504444"
+            />
+        <TextView
+            android:layout_width="67dp"
+            android:layout_height="16dp"
+            android:id="@+id/percent_off"
+            android:text="@string/_7_17_off"
+            app:layout_constraintTop_toBottomOf="@id/reviewstars"
+            app:layout_constraintStart_toEndOf="@id/before_discount_price"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="#93000A"
+            android:background="#FFDAD6"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/availability_status"
+            android:text="low in stock (5 products remains)"
+            app:layout_constraintTop_toBottomOf="@id/price_after_discount"
+            app:layout_constraintStart_toStartOf="@id/price_after_discount"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:textColor="#8C4B55"
+            android:background="#E4E2E1"
+            android:layout_marginStart="10dp"/>
+        <ImageView
+            android:id="@+id/background2"
+            android:layout_width="342dp"
+            android:layout_height="264dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/product_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_details"
+            android:text="@string/product_details"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="@id/background2"
+            app:layout_constraintStart_toStartOf="@id/background2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#1B1C1C" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_description"
+            android:text="@string/product_description"
+            app:layout_constraintTop_toBottomOf="@id/product_details"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/product_details"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sku"
+            android:text="@string/sku"
+            app:layout_constraintTop_toBottomOf="@id/product_description"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@id/product_details"
+            android:textColor="#504444"
+            />
+ <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RCH45Q1A"
+            android:text="@string/RCH45Q1A"
+            app:layout_constraintTop_toBottomOf="@id/sku"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="@id/product_details"
+            android:textColor="#1B1C1C"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weight"
+            android:text="@string/weight"
+            app:layout_constraintTop_toBottomOf="@id/product_description"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@id/product_details"
+            android:textColor="#504444"
+            />
+ <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twogram"
+            android:text="@string/twograms"
+            app:layout_constraintTop_toBottomOf="@id/sku"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toEndOf="@id/product_details"
+            android:textColor="#1B1C1C"
+            />
+        <ImageView
+            android:id="@+id/background3"
+            android:layout_width="342dp"
+            android:layout_height="237dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/product_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/policy"
+            android:text="@string/policy"
+            app:layout_constraintTop_toTopOf="@id/background3"
+            app:layout_constraintStart_toStartOf="@id/background3"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:textColor="#1B1C1C"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliver_image"
+            android:src="@drawable/deliver"
+            app:layout_constraintTop_toBottomOf="@id/policy"
+            app:layout_constraintStart_toStartOf="@id/policy"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliver_text"
+            android:text="@string/deliver"
+            app:layout_constraintStart_toEndOf="@id/deliver_image"
+            app:layout_constraintBottom_toBottomOf="@id/deliver_image"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textColor="#1B1C1C"
+            />
+  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliver_details"
+            android:text="@string/ships_in_1_month"
+            app:layout_constraintStart_toEndOf="@id/deliver_image"
+            app:layout_constraintTop_toBottomOf="@id/deliver_text"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textColor="#504444"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/warranty_image"
+            android:src="@drawable/warranty"
+            app:layout_constraintTop_toBottomOf="@id/deliver_image"
+            app:layout_constraintStart_toStartOf="@id/policy"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/warranty_text"
+            android:text="@string/warranty"
+            app:layout_constraintStart_toEndOf="@id/warranty_image"
+            app:layout_constraintBottom_toBottomOf="@id/warranty_image"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textColor="#1B1C1C"
+            />
+  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/warranty_details"
+            android:text="@string/_1_month"
+            app:layout_constraintStart_toEndOf="@id/warranty_image"
+            app:layout_constraintTop_toBottomOf="@id/warranty_image"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textColor="#504444"
+            />
+ <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/return_and_exchange_image"
+            android:src="@drawable/return_and_exchange"
+            app:layout_constraintTop_toBottomOf="@id/warranty_image"
+            app:layout_constraintStart_toStartOf="@id/policy"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/return_and_exchange_text"
+            android:text="@string/return_and_exchange"
+            app:layout_constraintStart_toEndOf="@id/return_and_exchange_image"
+            app:layout_constraintBottom_toBottomOf="@id/return_and_exchange_image"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textColor="#1B1C1C"
+            />
+  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/return_and_exchange_details"
+            android:text="30 days return policy"
+            app:layout_constraintStart_toEndOf="@id/return_and_exchange_image"
+            app:layout_constraintTop_toBottomOf="@id/return_and_exchange_image"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
             android:textColor="#504444"
             />
 
