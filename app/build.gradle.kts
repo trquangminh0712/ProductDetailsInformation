@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.quangminh.productdetailsrinformation"
+    namespace = "com.quangminh.weatherdemoapp"
     compileSdk {
         version = release(37) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.quangminh.productdetailsrinformation"
+        applicationId = "com.quangminh.weatherdemoapp"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -30,6 +30,10 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -40,4 +44,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+    implementation(libs.retrofit)
+    implementation(libs.moshi.kotlin)
+    implementation(libs.converter.moshi)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.lifecycle.viewmodel.ktx)
+    implementation(libs.fragment)
+    implementation(libs.fragment.ktx)
 }
