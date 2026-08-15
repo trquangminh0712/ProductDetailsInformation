@@ -1,5 +1,6 @@
 package com.quangminh.productdetailsrinformation
 
+import android.R
 import com.google.android.libraries.places.api.model.Review
 
 data class CurrentProductDetails(
@@ -11,7 +12,8 @@ data class CurrentProductDetails(
     val rating: Double,
     val stock: Int,
     val brand: String,
-    val reviews: List<Review> = emptyList()
+    val reviews: List<Review> = emptyList(),
+    val thumbnail: String,
 )
 data class Reviews(
     val rating: Double,

@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.quangminh.weatherdemoapp"
+    namespace = "com.quangminh.productdetailsrinformation"
     compileSdk {
         version = release(37) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.quangminh.weatherdemoapp"
+        applicationId = "com.quangminh.productdetailsrinformation"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

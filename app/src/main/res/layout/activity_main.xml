@@ -6,7 +6,7 @@
     android:background="#FDF9F8"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.constraintlayout.motion.widget.MotionLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
             android:layout_width="230dp"
             android:layout_height="55dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/text_input_layout_background"
             android:hint="@string/input_the_product_id"
             android:paddingStart="20dp"
@@ -448,7 +448,7 @@
             app:layout_constraintStart_toEndOf="@id/Name1"
             android:layout_marginStart="160dp"
             />
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:layout_width="164dp"
             android:layout_height="52dp"
             android:id="@+id/add_to_cart"
@@ -457,10 +457,9 @@
             android:layout_marginStart="0dp"
             android:layout_marginTop="20dp"
             android:text="@string/add_to_cart"
-            android:background="@drawable/add_to_cart"
             android:textSize="15sp"
-            />
-<com.google.android.material.button.MaterialButton
+            android:background="@drawable/add_to_cart" />
+        <Button
             android:layout_width="164dp"
             android:layout_height="52dp"
             android:id="@+id/buy_now"
@@ -469,10 +468,10 @@
             app:layout_constraintStart_toEndOf="@id/add_to_cart"
             android:layout_marginStart="20dp"
             android:text="@string/buy_now"
-            android:background="@drawable/add_to_cart"
+            android:background="@drawable/buynow"
             android:textSize="15sp"
             />
 
 
-    </androidx.constraintlayout.motion.widget.MotionLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
