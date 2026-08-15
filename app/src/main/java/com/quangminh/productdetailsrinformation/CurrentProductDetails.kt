@@ -9,11 +9,17 @@ data class CurrentProductDetails(
     val description: String,
     val price: Double,
     val discountPercentage: Double,
+    val priceAfterDiscount: Double = price - (price * discountPercentage / 100),
     val rating: Double,
     val stock: Int,
     val brand: String,
-    val reviews: List<Review> = emptyList(),
+    val reviews: List<Reviews> = emptyList(),
     val thumbnail: String,
+    val sku: String,
+    val weight: Double,
+    val shippingInformation : String,
+    val warrantyInformation: String,
+    val returnPolicy: String
 )
 data class Reviews(
     val rating: Double,
