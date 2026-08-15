@@ -7,6 +7,8 @@ import android.graphics.Paint
 import android.widget.TextView
 import android.text.SpannableString
 import android.text.style.StrikethroughSpan
+import android.util.Log
+import android.widget.Toast
 import androidx.activity.viewModels
 import com.quangminh.productdetailsrinformation.databinding.ActivityMainBinding
 
@@ -40,7 +42,12 @@ class MainActivity : AppCompatActivity() {
             binding.comment3.text = currentProductDetails.reviews[2].comment
 
 
+            viewModel.errorMessage.observe(this){errorMessage ->
+                Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
+            }
 
+
+            Log.i("LIFECYCLE","onCreate called")
 
         }
         val textView = findViewById<TextView>(R.id.before_discount_price)
@@ -50,7 +57,44 @@ class MainActivity : AppCompatActivity() {
         textView.text = spannable
 
 
+
+
+
+
+
     }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("LIFECYCLE","onStart called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i("LIFECYCLE","onResume called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.i("LIFECYCLE","onPause called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i("LIFECYCLE","onStop called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i("LIFECYCLE","onDestroy called")
+
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.i("LIFECYCLE","onRestart called")
+    }
+
 
 
 
