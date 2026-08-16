@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         viewModel.currentProductDetails.observe(this) { currentProductDetails ->
             binding.brand.text = currentProductDetails.brand
@@ -27,12 +28,10 @@ class MainActivity : AppCompatActivity() {
             binding.beforeDiscountPrice.text = currentProductDetails.priceAfterDiscount.toString()
             binding.productDescription.text = currentProductDetails.description
             binding.availabilityStatus.text = currentProductDetails.stock.toString()
-            binding.productDetails.text = currentProductDetails.description
-            binding.productDescription.text = currentProductDetails.description
             binding.sku.text = currentProductDetails.sku
             binding.twogram.text = currentProductDetails.weight.toString() + "g"
             binding.deliverText.text = currentProductDetails.shippingInformation
-            binding.warrantyDetails.text = currentProductDetails.description
+            binding.warrantyDetails.text = currentProductDetails.warrantyInformation
             binding.returnAndExchangeDetails.text = currentProductDetails.returnPolicy
             binding.Name1.text = currentProductDetails.reviews[0].reviewerName
             binding.comment1.text = currentProductDetails.reviews[0].comment
@@ -94,9 +93,5 @@ class MainActivity : AppCompatActivity() {
         super.onRestart()
         Log.i("LIFECYCLE","onRestart called")
     }
-
-
-
-
 
 }

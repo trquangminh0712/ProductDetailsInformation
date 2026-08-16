@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/thumbnail_list_1"
+        android:src="@drawable/thumbnail_list"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BrandAndCategory"
+        app:layout_constraintStart_toEndOf="@id/thumbnail_list_1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/apple_i_n_tho_i"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        app:layout_constraintStart_toEndOf="@id/thumbnail_list_1"
+        app:layout_constraintTop_toBottomOf="@id/BrandAndCategory"
+        android:text="@string/iphone_15_pro_max_256gb"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

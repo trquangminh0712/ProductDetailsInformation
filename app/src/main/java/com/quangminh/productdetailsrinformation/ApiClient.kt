@@ -11,7 +11,7 @@ object ApiClient {
         .add(KotlinJsonAdapterFactory())
         .build()
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://dummyjson.com/products/")
+        .baseUrl("https://dummyjson.com/")
         .addConverterFactory(MoshiConverterFactory.create(moshi))
         .build()
 

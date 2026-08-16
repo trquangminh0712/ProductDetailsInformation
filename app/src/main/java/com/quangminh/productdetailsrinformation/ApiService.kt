@@ -9,4 +9,9 @@ interface ApiService {
     suspend fun getCurrentProductDetails(
         @Path(value = "id") id: Int = 1
     ): CurrentProductDetails
+
+    @GET("products")
+    suspend fun getProductsList() : ProductList
+
+
 }

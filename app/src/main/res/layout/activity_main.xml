@@ -164,7 +164,7 @@
             android:layout_marginTop="20dp"
             android:textColor="#1B1C1C" />
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/product_description"
             android:text="@string/product_description"
@@ -172,8 +172,9 @@
             app:layout_constraintTop_toBottomOf="@id/product_details"
             android:textSize="16sp"
             android:layout_marginTop="20dp"
-            app:layout_constraintStart_toStartOf="@id/product_details"
-            />
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintStart_toStartOf="@id/background2"
+            app:layout_constraintEnd_toEndOf="@id/background2"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -387,8 +388,8 @@
             android:id="@+id/star1"
             android:src="@drawable/star1"
             app:layout_constraintBottom_toBottomOf="@id/Name1"
-            app:layout_constraintStart_toEndOf="@id/Name1"
-            android:layout_marginStart="160dp"
+            app:layout_constraintEnd_toEndOf="@id/background4"
+            android:layout_marginEnd="20dp"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -416,8 +417,7 @@
             android:id="@+id/star2"
             android:src="@drawable/star1"
             app:layout_constraintBottom_toBottomOf="@id/Name2"
-            app:layout_constraintStart_toEndOf="@id/Name1"
-            android:layout_marginStart="160dp"
+            app:layout_constraintStart_toStartOf="@id/star1"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -445,8 +445,7 @@
             android:id="@+id/star3"
             android:src="@drawable/star3"
             app:layout_constraintBottom_toBottomOf="@id/Name3"
-            app:layout_constraintStart_toEndOf="@id/Name1"
-            android:layout_marginStart="160dp"
+            app:layout_constraintStart_toStartOf="@id/star2"
             />
         <Button
             android:layout_width="164dp"
