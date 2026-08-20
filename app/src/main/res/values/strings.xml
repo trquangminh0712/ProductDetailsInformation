@@ -35,8 +35,24 @@ lasting and cruelty-free formula.</string>
     <string name="very_satisfied">Very satisfied!</string>
     <string name="add_to_cart">Add To Cart</string>
     <string name="buy_now">Buy Now</string>
-    <string name="apple_i_n_tho_i">APPLE • ĐIỆN THOẠI</string>
+    <string name="apple_i_n_tho_i">APPLE • PHONE</string>
     <string name="iphone_15_pro_max_256gb">iPhone 15 Pro Max 256GB</string>
+    <string name="_4_8">4.8</string>
+    <string name="_1199">$1199</string>
+    <string name="_1055">$1055</string>
+    <string name="hp_laptop">HP • LAPTOP</string>
+    <string name="hp_spectre_x360_14_inch">HP Spectre x360 14 inch</string>
+    <string name="_4_5">4.5</string>
+    <string name="_1499">$1499</string>
+    <string name="sony_ph_ki_n">SONY • ASCESSORIES</string>
+    <string name="sony_wh_1000xm5_earphone">Sony WH-1000XM5 EarPhone</string>
+    <string name="_4_9">4.9</string>
+    <string name="_398">$398</string>
+    <string name="samsung_smartwatch">SAMSUNG • SMARTWATCH</string>
+    <string name="samsung_galaxy_watch_6">Samsung Galaxy Watch 6</string>
+    <string name="_4_6">4.6</string>
+    <string name="_299">$299</string>
+    <string name="_284">$284</string>
 
 
 </resources>

@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             binding.brand.text = currentProductDetails.brand
             binding.productName.text = currentProductDetails.title
             binding.priceAfterDiscount.text = currentProductDetails.price.toString()
-            binding.beforeDiscountPrice.text = currentProductDetails.priceAfterDiscount.toString()
+            binding.beforeDiscountPrice.text = currentProductDetails.priceBeforeDiscount.toString()
             binding.productDescription.text = currentProductDetails.description
             binding.availabilityStatus.text = currentProductDetails.stock.toString()
             binding.sku.text = currentProductDetails.sku
@@ -54,6 +54,8 @@ class MainActivity : AppCompatActivity() {
         val spannable = android.text.SpannableString(textContent)
         spannable.setSpan(android.text.style.StrikethroughSpan(), 0, textContent.length, 0)
         textView.text = spannable
+
+
 
 
 

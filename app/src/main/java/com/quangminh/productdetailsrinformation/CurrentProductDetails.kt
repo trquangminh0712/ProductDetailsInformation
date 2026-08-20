@@ -2,6 +2,7 @@ package com.quangminh.productdetailsrinformation
 
 import android.R
 import com.google.android.libraries.places.api.model.Review
+import kotlin.math.round
 
 data class CurrentProductDetails(
     val id: Int,
@@ -9,7 +10,7 @@ data class CurrentProductDetails(
     val description: String,
     val price: Double,
     val discountPercentage: Double,
-    val priceAfterDiscount: Double = price - (price * discountPercentage / 100),
+    val priceBeforeDiscount: Double = round(price + (price * discountPercentage / 100)),
     val rating: Double,
     val stock: Int,
     val brand: String,
@@ -27,3 +28,5 @@ data class Reviews(
     val reviewerName: String
 
 )
+
+

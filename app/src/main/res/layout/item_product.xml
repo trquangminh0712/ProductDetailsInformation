@@ -7,12 +7,21 @@
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:id="@+id/thumbnail_list_1"
-        android:src="@drawable/thumbnail_list"
+        android:id="@+id/thumbnail_list_2"
+        android:src="@drawable/thumbnail2"
         android:scaleType="centerCrop"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thumbnail_list_1"
+        />
+    <ImageView
+        android:layout_width="256dp"
+        android:layout_height="120dp"
+        android:id="@+id/background1"
+        android:src="@drawable/background_list"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintStart_toEndOf="@id/thumbnail_list_1"
+        android:layout_marginStart="10dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +29,7 @@
         app:layout_constraintStart_toEndOf="@id/thumbnail_list_1"
         app:layout_constraintTop_toTopOf="parent"
         android:text="@string/apple_i_n_tho_i"
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="20dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,9 +37,297 @@
         app:layout_constraintStart_toEndOf="@id/thumbnail_list_1"
         app:layout_constraintTop_toBottomOf="@id/BrandAndCategory"
         android:text="@string/iphone_15_pro_max_256gb"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
         android:textSize="14sp"
         android:textStyle="bold"
         android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star1"
+        android:src="@drawable/star_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_4_8"
+        app:layout_constraintStart_toEndOf="@id/star1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="11sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_before_discount_1"
+        android:text="@string/_1199"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/title"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_after_discount_1"
+        app:layout_constraintTop_toBottomOf="@id/price_before_discount_1"
+        android:text="@string/_1055"
+        android:textColor="#3525CD"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/price_before_discount_1"/>
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/addtocart1"
+        android:src="@drawable/add_to_cart_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/price_after_discount_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="5dp"/>
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/thumbnail_list_1"
+        android:src="@drawable/thumbnail_list"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="256dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/background_list"
+        app:layout_constraintStart_toStartOf="@id/background1"
+        app:layout_constraintTop_toBottomOf="@id/background1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BrandAndCategory2"
+        app:layout_constraintStart_toEndOf="@id/thumbnail_list_2"
+        app:layout_constraintTop_toTopOf="@id/background2"
+        android:text="@string/hp_laptop"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title2"
+        app:layout_constraintStart_toEndOf="@id/thumbnail_list_2"
+        app:layout_constraintTop_toBottomOf="@id/BrandAndCategory2"
+        android:text="@string/hp_spectre_x360_14_inch"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star2"
+        android:src="@drawable/star_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/background2"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_4_5"
+        app:layout_constraintStart_toEndOf="@id/star2"
+        app:layout_constraintTop_toTopOf="@id/background2"
+        android:textSize="11sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_before_discount_2"
+        android:text="@string/_1499"
+        app:layout_constraintTop_toBottomOf="@id/title2"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/title2"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_after_discount_2"
+        app:layout_constraintTop_toBottomOf="@id/price_before_discount_2"
+        android:text="@string/_1199"
+        android:textColor="#3525CD"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/price_before_discount_2"/>
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/addtocart2"
+        android:src="@drawable/add_to_cart_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/price_after_discount_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="5dp"/>
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/thumbnail_list_3"
+        android:src="@drawable/thumbnail_list_3"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@id/thumbnail_list_1"
+        app:layout_constraintTop_toTopOf="@id/background3" />
+
+    <ImageView
+        android:id="@+id/background3"
+        android:layout_width="256dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/background_list"
+        app:layout_constraintStart_toStartOf="@id/background2"
+        app:layout_constraintTop_toBottomOf="@id/background2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BrandAndCategory3"
+        app:layout_constraintStart_toEndOf="@id/thumbnail_list_3"
+        app:layout_constraintTop_toTopOf="@id/background3"
+        android:text="@string/sony_ph_ki_n"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title3"
+        app:layout_constraintStart_toEndOf="@id/thumbnail_list_3"
+        app:layout_constraintTop_toBottomOf="@id/BrandAndCategory3"
+        android:text="@string/sony_wh_1000xm5_earphone"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star3"
+        android:src="@drawable/star_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/background3"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_4_9"
+        app:layout_constraintStart_toEndOf="@id/star3"
+        app:layout_constraintTop_toTopOf="@id/background3"
+        android:textSize="11sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_after_discount_3"
+        app:layout_constraintTop_toBottomOf="@id/title3"
+        android:text="@string/_398"
+        android:textColor="#3525CD"
+        android:textSize="16sp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="@id/title3"/>
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/addtocart3"
+        android:src="@drawable/add_to_cart_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/price_after_discount_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="5dp"/>
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/thumbnail_list_4"
+        android:src="@drawable/thumbnail_list_4"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@id/thumbnail_list_1"
+        app:layout_constraintTop_toTopOf="@id/background4" />
+
+    <ImageView
+        android:id="@+id/background4"
+        android:layout_width="256dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/background_list"
+        app:layout_constraintStart_toStartOf="@id/background3"
+        app:layout_constraintTop_toBottomOf="@id/background3" />
+
+    <TextView
+        android:id="@+id/BrandAndCategory4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/samsung_smartwatch"
+        app:layout_constraintStart_toEndOf="@id/thumbnail_list_4"
+        app:layout_constraintTop_toTopOf="@id/background4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title4"
+        app:layout_constraintStart_toEndOf="@id/thumbnail_list_4"
+        app:layout_constraintTop_toBottomOf="@id/BrandAndCategory4"
+        android:text="@string/samsung_galaxy_watch_6"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star4"
+        android:src="@drawable/star_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/background4"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_4_6"
+        app:layout_constraintStart_toEndOf="@id/star4"
+        app:layout_constraintTop_toTopOf="@id/background4"
+        android:textSize="11sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_before_discount_4"
+        android:text="@string/_299"
+        app:layout_constraintTop_toBottomOf="@id/title4"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/title4"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_after_discount_4"
+        app:layout_constraintTop_toBottomOf="@id/title4"
+        android:text="@string/_284"
+        android:textColor="#3525CD"
+        android:textSize="16sp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="@id/title4"/>
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/addtocart4"
+        android:src="@drawable/add_to_cart_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/price_after_discount_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="5dp"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
