@@ -19,13 +19,13 @@ class ProductListViewModel : ViewModel() {
         fetchProductList()
     }
 
-    private fun fetchProductList() {
+     fun fetchProductList() {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 val response = apiService.getProductsList()
-                _productList.value = response.products
+                _productList.postValue(response.products)
             } catch (e: Exception) {
-                _errorMessage.value = e.message
+                _errorMessage.postValue(e.message)
 
             }
         }

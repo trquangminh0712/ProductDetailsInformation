@@ -7,7 +7,7 @@ import retrofit2.http.Query
 interface ApiService {
     @GET("products/{id}")
     suspend fun getCurrentProductDetails(
-        @Path(value = "id") id: Int = 1
+        @Path(value = "id") id: Int=1
     ): CurrentProductDetails
 
     @GET("products")

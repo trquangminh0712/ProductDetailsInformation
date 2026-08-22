@@ -13,14 +13,14 @@ data class CurrentProductDetails(
     val priceBeforeDiscount: Double = round(price + (price * discountPercentage / 100)),
     val rating: Double,
     val stock: Int,
-    val brand: String,
+    val brand: String?,
     val reviews: List<Reviews> = emptyList(),
-    val thumbnail: String,
-    val sku: String,
-    val weight: Double,
-    val shippingInformation : String,
-    val warrantyInformation: String,
-    val returnPolicy: String
+    val thumbnail: String?,
+    val sku: String?,
+    val weight: Double?,
+    val shippingInformation : String?,
+    val warrantyInformation: String?,
+    val returnPolicy: String?
 )
 data class Reviews(
     val rating: Double,
